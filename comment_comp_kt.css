@@ -1,0 +1,28 @@
+/* style.css */
+.ccm-comment_comp_kt > .comments {
+    display: table;
+    padding: 0.5em;
+}
+
+.ccm-comment_comp_kt > .comments > div {
+    display: table-row;
+}
+
+.ccm-comment_comp_kt > .comments > div > div {
+    display: table-cell;
+}
+
+
+.ccm-comment_comp_kt > .comments > .comment > .name {
+    font-weight: bold;
+}
+
+
+.ccm-comment_comp_kt > .comments > .comment:nth-child(even) {
+    background-color: aliceblue;
+}
+
+.ccm-comment_comp_kt > .comments > .comment > .name:after {
+    content:": ";
+}
+
