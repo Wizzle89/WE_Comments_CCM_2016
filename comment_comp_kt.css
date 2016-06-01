@@ -33,9 +33,9 @@
 }
 
 .button {
+    color: #333;
     background-color: #9d9d9d;
     border: none;
-    color: #333333;
     padding: 5px 12px;
     text-align: center;
     text-decoration: none;
