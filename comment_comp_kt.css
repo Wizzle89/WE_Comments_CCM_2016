@@ -1,8 +1,8 @@
-/* style.css */
 .ccm-comment_comp_kt > .comments {
     display: table;
     padding: 0.5em;
 }
+
 
 .ccm-comment_comp_kt > .comments > div {
     display: table-row;
@@ -17,12 +17,33 @@
     font-weight: bold;
 }
 
-
 .ccm-comment_comp_kt > .comments > .comment:nth-child(even) {
     background-color: aliceblue;
 }
 
 .ccm-comment_comp_kt > .comments > .comment > .name:after {
-    content:": ";
+    content: ": ";
 }
 
+.ccm-comment_comp_kt > .comments > .comment > .text {
+    font-size: 12px;
+    max-width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.button {
+    background-color: #9d9d9d;
+    border: none;
+    color: #333333;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.input {
+    padding: 3px 12px;
+    font-size: 16px;
+}
