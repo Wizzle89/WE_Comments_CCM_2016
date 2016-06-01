@@ -5,13 +5,15 @@ ccm.component({
     config: {
 
         html: [ccm.store, {local: 'comment_comp_kt.json'}],
-        key: 'test',
-        store: [ccm.store, {url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'comment_comp_kt1'}],
+        key: 'test2',
+        store: [ccm.store, {url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'comment_comp_kt'}],
         style: [ccm.load, 'comment_comp_kt.css'],
         user: [ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js']
 
     },
-
+    
+    
+    
     Instance: function () {
 
         var self = this;
