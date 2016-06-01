@@ -1,3 +1,8 @@
+/*
+ Die Kommentar Komponente wurde auf Basis der Chat Komponente von Andre Kless entwickelt.
+
+ */
+
 ccm.component({
 
     name: 'comment_comp_kt',
@@ -5,16 +10,16 @@ ccm.component({
     config: {
 
         html: [ccm.store, {local: 'comment_comp_kt.json'}],
-        key: 'test2',
+        key: 'test',
         store: [ccm.store, {url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'comment_comp_kt'}],
         style: [ccm.load, 'comment_comp_kt.css'],
         user: [ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js']
 
     },
-    
-    
-    
+
+
     Instance: function () {
+
 
         var self = this;
 
@@ -66,7 +71,9 @@ ccm.component({
 
                         }
                     }));
-
+/*
+    Darstellung der vorhandenen Kommentare: absteigend von der neusten zur aeltesten.
+ */
                     for (var i = dataset.comments.length - 1; 0 < i; i--) {
 
                         var comment = dataset.comments[i];
@@ -92,5 +99,3 @@ ccm.component({
     }
 
 });
-
-
