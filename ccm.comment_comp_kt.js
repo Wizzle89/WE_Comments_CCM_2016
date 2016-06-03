@@ -43,7 +43,6 @@ ccm.component({
                     self.store.set({key: self.key, comments: []}, proceed);
                 else
                     proceed(dataset);
-
                 function proceed(dataset) {
 
                     element.html(ccm.helper.html(self.html.get('main')));
@@ -51,6 +50,7 @@ ccm.component({
                     var comments_div = ccm.helper.find(self, '.comments');
 
                     comments_div.append(ccm.helper.html(self.html.get('input'), {
+
                         onsubmit: function () {
 
                             var value = ccm.helper.val(ccm.helper.find(self, 'input').val()).trim();
@@ -71,20 +71,21 @@ ccm.component({
 
                         }
                     }));
-/*
-    Darstellung der vorhandenen Kommentare: absteigend von der neusten zur aeltesten.
- */
+
+                    /*
+                     Darstellung der vorhandenen Kommentare: absteigend von der neusten zur aeltesten.
+                     */
+
                     for (var i = dataset.comments.length - 1; 0 < i; i--) {
 
-                        var comment = dataset.comments[i];
-
+                        var comment = dataset.comments[i]
                         comments_div.append(ccm.helper.html(self.html.get('comment'), {
 
-                            name: ccm.helper.val(comment.user),
+                            name: ccm.helper.val("Kommentar Nr: " + i + ' ' + comment.user),
                             text: ccm.helper.val(comment.text)
 
                         }));
-
+//edit button
                     }
 
 

@@ -19,6 +19,8 @@
       }
     ]
   },
+
+
   "input": {
     "tag": "div",
     "class": "new_comment",
